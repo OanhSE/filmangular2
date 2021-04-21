@@ -2,26 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65b56f1b-221e-494d-9b57-fded6cebe8d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/filmangular/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/filmangular/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmangular/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/filmangular/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmangular/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/filmangular/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/filmangular/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/filmangular/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Film.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/filmangular" beforeDir="false" afterPath="$PROJECT_DIR$/filmangular" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/filmangular" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1pcafvBPgR24EUL3o2cKUZmFvnR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -29,8 +45,15 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="ts.external.directory.path" value="C:\Users\vothi\Documents\Film\filmangular\node_modules\typescript\lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vothi\Documents\Film\filmangular\src\app\home" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,10 +64,27 @@
       <option name="presentableId" value="Default" />
       <updated>1615484938908</updated>
       <workItem from="1615484940122" duration="138000" />
+      <workItem from="1617263064827" duration="4467000" />
+      <workItem from="1617269114909" duration="738000" />
+      <workItem from="1617444956647" duration="5936000" />
+      <workItem from="1617501541724" duration="10909000" />
+      <workItem from="1617519178231" duration="6356000" />
+      <workItem from="1617530188656" duration="2411000" />
+      <workItem from="1617795233944" duration="14310000" />
+      <workItem from="1617814909591" duration="4836000" />
+      <workItem from="1617868076795" duration="23000" />
+      <workItem from="1618124386963" duration="22069000" />
+      <workItem from="1618329962058" duration="17000" />
+      <workItem from="1618348905188" duration="6427000" />
+      <workItem from="1618355376111" duration="4588000" />
+      <workItem from="1618635509626" duration="11090000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
