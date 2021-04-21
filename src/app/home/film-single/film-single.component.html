@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="row movie_trailer detail_typeA">
+    <div class="movile_box">
+      <img src="https://www.youtube.com/watch?v=Mddnpxc2pF4">
+
+    </div>
+
+  </div>
+  <div class="row wide_inner">
+    <div class="row wide_top">
+
+      <div class="col-3">
+          <img src="../../../assets/images{{film$.imageLandscape}}" width="100%" height="100%">
+          <button> Đặt vé </button>
+      </div>
+      <div class="col-9">
+        <h3>{{film$.name}}</h3>
+        <div class="row">
+            <p><b>Xem xếp hạng </b></p>
+            <p>5</p>
+         </div>
+        <div class="row">
+          <p><b>Xếp hạng </b></p>
+          <p>[Trong nước] 13 tuổi trở lên</p>
+        </div>
+        <div class="row">
+          <p><b>Ngày phát hành </b></p>
+          <p>{{film$.startdate | date:'d/M/yy'}}</p>
+        </div>
+        <div class="row">
+          <p><b>Thông tin cơ bản</b></p>
+          <p>Drama Vietnam (128Phút)</p>
+        </div>
+        <div class="row">
+          <p><b>Loại</b></p>
+          <p>2D | Normal | Normal sound | Lồng tiếng</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h3> Tóm tắt </h3>
+      <div>
+        {{film$.description}}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <h3> Xếp hạng và đánh giá phim</h3>
+  </div>
+  <div class="row">
+          <div class="col-3">
+            <div>
+              <h5>Xếp hạng</h5>
+              <app-star-rating [rating]="rating"  [starCount]="starCount" [color]="starColor" (ratingUpdated)="onRatingChanged($event)"></app-star-rating>
+
+            </div>
+          </div>
+          <div class="col-7">
+            <h5>Bình luận</h5>
+            <div>
+              <form class="form-inline" >
+                <div class="example-full-width">
+                  <mat-label>  </mat-label>
+                  <input matInput placeholder="Tốt" value="Tốt">
+                  <button class="nav-link example-icon favorite-icon"  mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)="comment()">
+                    <mat-icon> comment</mat-icon>
+                  </button>
+                </div>
+
+
+
+              </form>
+            </div>
+          </div>
+          <div class="col-2">
+
+ </div>
+
+  </div>
+
+<!--  <mat-grid-list cols="4" rowHeight="300px">-->
+<!--    <mat-grid-tile-->
+<!--      *ngFor="let tile of tiles"-->
+<!--      [colspan]="tile.cols"-->
+<!--      [rowspan]="tile.rows"-->
+<!--      [style.background]="tile.color">-->
+<!--      {{tile.text}}-->
+<!--    </mat-grid-tile>-->
+<!--  </mat-grid-list>-->
+

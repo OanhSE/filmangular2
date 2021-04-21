@@ -1,0 +1,19 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { CinemaRoutingModule } from './cinema-routing.module';
+import { CinemaComponent } from './cinema.component';
+import { ListCinemaComponent } from './list-cinema/list-cinema.component';
+
+
+@NgModule({
+  declarations: [
+    CinemaComponent,
+    ListCinemaComponent
+  ],
+  imports: [
+    CommonModule,
+    CinemaRoutingModule
+  ]
+})
+export class CinemaModule { }

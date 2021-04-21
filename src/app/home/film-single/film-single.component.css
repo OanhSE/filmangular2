@@ -1,0 +1,37 @@
+.detail_typeA {
+  height: 531px;
+  padding: 30px 0;
+  background: #231f20;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.movie_trailer {
+  position: relative;
+}
+.movile_box {
+  position: relative;
+  z-index: 1;
+}
+.movile_box img {
+  width: auto;
+  height: 470px;
+  border: 0;
+  vertical-align: middle;
+}
+.wide_inner {
+  padding: 30px 0 50px;
+}
+.wide_top {
+  margin-bottom: 50px;
+}
+.wide_top:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.wide_top .thumb {
+  float: left;
+  width: 175px;
+  margin-right: 25px;
+}

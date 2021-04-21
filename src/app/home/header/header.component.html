@@ -1,0 +1,67 @@
+<script src="header.component.ts"></script>
+<div class="container-fluid">
+  <header>
+
+  <nav  style="color: darkslateblue">
+    <!-- Brand -->
+
+      <button class="btn-home" mat-fab color="primary" aria-label="Example icon button with a delete icon"(click)="tranferPageHome()">
+          <mat-icon>shopping_basket</mat-icon>
+      </button>
+
+      <button mat-button class="nav-link" color="primary" (click)="tranferPageFilm()">Phim</button>
+      <button mat-button class="nav-link" color="primary" (click)="tranferPageCinema()">Rạp</button>
+      <button mat-button class="nav-link" color="primary" (click)="tranferPageSale()">Khuyến Mãi</button>
+      <button mat-button class="nav-link" color="primary" (click)="tranferPageTicket()">Mua vé</button>
+
+
+      <button style="float: right; " class="nav-link example-icon favorite-icon"  mat-icon-button color="primary" aria-label="Example icon button with a home icon" ((click)="tranferManage()">
+          <mat-icon>home</mat-icon>
+       </button>
+      <button style ="float: right;" class="nav-link example-icon favorite-icon" mat-icon-button color="primary" aria-label="Example icon button with a home icon" (click)="tranferPageBill()">
+        <mat-icon matBadge="15" matBadgeColor="warn">shopping_cart</mat-icon>
+      </button>
+      <button style="float: right; "class="nav-link example-icon favorite-icon"  mat-icon-button color="warn" aria-label="Example icon button with a home icon" (click)="tranferPageGift()">
+        <mat-icon>card_giftcard</mat-icon>
+      </button>
+      <button  (click)="tranferPageRegister()" class="nav-link"style="float: right;background-color: darkslateblue" routerLink = './authen/register'>Đăng ký</button>
+      <button  (click)="tranferPageLogin()" class="nav-link" style="float: right;background-color: darkslateblue"routerLink = './authen/login'>Đăng nhập</button>
+
+
+
+    <div class="nav-item" style="float: right;">
+      <a *ngIf = "user" class="nav-link" routerLink = './home'>{{user.name}}</a>
+    </div>
+
+  </nav>
+
+<!--  <div class="row tab"  >-->
+<!--    <div>-->
+<!--    <h2 class = "h2">TM xin chào!</h2><br>-->
+<!--    <h3 class = " h3 "> Hàng triệu bộ phim, chương trình truyền hình và mọi người để khám phá.<br> Khám phá ngay bây giờ.</h3><br>-->
+<!--    <form id="inner_search_form" class="formtab" action="/search" method="get" accept-charset="utf-8">-->
+
+<!--      <label>-->
+<!--        <input class="f"  dir="auto" id="inner_search_v4" name="query" type="text" tabindex="1" autocorrect="off" autofill="off" autocomplete="off" spellcheck="false" placeholder="Tìm kiếm phim,rạp,diễn viên......" value="">-->
+<!--      </label>-->
+<!--      <input class="s" type="submit" value="Tìm kiếm">-->
+<!--    </form>-->
+<!--    </div>-->
+
+<!--  </div>-->
+    <div class="row bg-light justify-content-center boder-btn-icon" >
+
+        <button class="btn-icon" mat-fab color="primary" aria-label="Example icon button with a delete icon">
+          <mat-icon>shopping_basket</mat-icon>
+          <h4>CINEMA</h4>
+        </button>
+
+
+
+    </div>
+
+
+  </header>
+
+
+</div>

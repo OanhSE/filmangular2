@@ -1,0 +1,88 @@
+<div class="container-fluid">
+    <div>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.lottecinemavn.com/Media/WebAdmin/917c1bba2b684105a65b37e26f9ba205.jpg" alt="Los Angeles" width="100%" height=" 420px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.lottecinemavn.com/Media/WebAdmin/c61b043b32d14e9da46824c217346e8e.jpg" alt="Chicago" width="100%" height=" 420px;">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.lottecinemavn.com/Media/WebAdmin/995b77a9a571424d893a23fd2ac67cc2.jpg" alt="New York" width="100%" height=" 420px;">
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+    <article>
+      <div>
+        <h2>Danh sách film</h2>
+        <div class="anchor ">
+          <div class="btn-group">
+            <button type="button" class="btn btn-info">Phim đang chiếu</button>
+            <button type="button" class="btn btn-info">Phim sắp chiếu  </button>
+
+          </div>
+        </div>
+        <div class="listfilm">
+          <!-- <div *ngFor = "let  film of list"> -->
+           <div *ngFor = "let  film of listfilms">
+            <div class="film">
+              <div class="image">
+                <a href="#">
+
+                   <img src = "../../../assets/images/{{film.imageLandscape}}">
+<!--                  <img src = "{{film.image}}">-->
+                </a>
+              </div>
+              <div  class="layer_hover" >
+                <a href="#" onclick=""   class="btn_reserve">Đặt vé</a>
+                <a href="#" onclick="" routerLink = 'film-single/{{film.id}}'  class="btn_View">Chi tiết</a>
+              </div>
+
+              <ul >
+                <li>
+                  <b>
+                     <h3 class="title"><a>{{film.name}}</a></h3>
+<!--                     <h3 class="title"><a>{{film.title}}</a></h3>-->
+                  </b>
+                </li>
+                <li>
+                  <h4 class="date">{{film.startdate | date:'d/M/yy'}}</h4>
+                </li>
+              </ul>
+
+
+
+
+          </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </article>
+
+</div>
+<!-- Chi tiết Phim-->
+<div>
+
+</div>

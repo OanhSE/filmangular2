@@ -1,0 +1,104 @@
+<h1 mat-dialog-title>Thêm Phim</h1>
+<div mat-dialog-content >
+  <div class="card" xmlns="http://www.w3.org/1999/html">
+
+    <div class="card-body">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+          <label  >Tên phim:</label>
+          <input type="text" formControlName="name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+          <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+            <div *ngIf="f.name.errors.required">Tên phim là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Thời lượng phim:</label>
+          <input type="number" formControlName="duration" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.duration.errors }" />
+          <div *ngIf="submitted && f.duration.errors" class="invalid-feedback">
+            <div *ngIf="f.duration.errors.required">Thời lượng phim là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Diễn viên:</label>
+          <input type="text" formControlName="actor" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.actor.errors }" />
+          <div *ngIf="submitted && f.actor.errors" class="invalid-feedback">
+            <div *ngIf="f.actor.errors.required">Diễn viên là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Thể loại:</label>
+          <input type="text" formControlName="genres" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.genres.errors }" />
+          <div *ngIf="submitted && f.actor.errors" class="invalid-feedback">
+            <div *ngIf="f.genres.errors.required">Thể loại là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Năm:</label>
+          <input type="text" formControlName="year" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.year.errors }" />
+          <div *ngIf="submitted && f.actor.errors" class="invalid-feedback">
+            <div *ngIf="f.year.errors.required">Năm là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+            <label >Ngày bắt đầu:</label>
+            <input type="date" formControlName="startFrom" (ngModelChange)="checkDate()"
+                   class="form-control"
+
+            />
+            <!-- [ngClass]="{ 'is-invalid': submitted && f.date.errors }"  -->
+            <div *ngIf="submitted && f.startFrom.errors" class="invalid-feedback">
+              <div *ngIf="f.startFrom.errors.required"> Ngày bắt đầu là bắt buộc</div>
+            </div>
+            <span style="color: red;" *ngIf="isShowErrorDate"> Ngày bắt đầu có ràng buộc </span>
+
+        </div>
+        <div class="form-group">
+          <label  >Ngôn ngữ:</label>
+          <input type="text" formControlName="language" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.language.errors }" />
+          <div *ngIf="submitted && f.language.errors" class="invalid-feedback">
+            <div *ngIf="f.language.errors.required">Ngôn ngữ là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Tóm tắt:</label>
+          <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" />
+          <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+            <div *ngIf="f.description.errors.required">Tóm tắt là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Hình:</label>
+          <input type="url" formControlName="image" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.image.errors }" />
+          <div *ngIf="submitted && f.image.errors" class="invalid-feedback">
+            <div *ngIf="f.image.errors.required">Hình là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label  >Trailer:</label>
+          <input type="url" formControlName="urltrailer" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.urltrailer.errors }" />
+          <div *ngIf="submitted && f.urltrailer.errors" class="invalid-feedback">
+            <div *ngIf="f.urltrailer.errors.required">Trailer là bắt buộc</div>
+          </div>
+        </div>
+        <div class="form-group" >
+          <button mat-button  cdkFocusInitial [disabled]="loading" class="btn btn-primary">
+            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            Thêm
+          </button>
+
+
+        </div>
+
+
+      </form>
+    </div>
+
+  </div>
+
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Hủy</button>
+  <!--  <button mat-button [mat-dialog-close]="submitted" cdkFocusInitial>Ok</button>-->
+</div>
+
