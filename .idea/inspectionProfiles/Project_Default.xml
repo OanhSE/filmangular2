@@ -4,7 +4,7 @@
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="37">
+          <list size="39">
             <item index="0" class="java.lang.String" itemvalue="matinput" />
             <item index="1" class="java.lang.String" itemvalue="[formcontrol]" />
             <item index="2" class="java.lang.String" itemvalue="[matautocomplete]" />
@@ -42,6 +42,8 @@
             <item index="34" class="java.lang.String" itemvalue="routerlink" />
             <item index="35" class="java.lang.String" itemvalue="mat-input" />
             <item index="36" class="java.lang.String" itemvalue="mat-dialog-header" />
+            <item index="37" class="java.lang.String" itemvalue="[routerlink]" />
+            <item index="38" class="java.lang.String" itemvalue="mat-mini-fab" />
           </list>
         </value>
       </option>
@@ -50,7 +52,7 @@
     <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myValues">
         <value>
-          <list size="16">
+          <list size="20">
             <item index="0" class="java.lang.String" itemvalue="nobr" />
             <item index="1" class="java.lang.String" itemvalue="noembed" />
             <item index="2" class="java.lang.String" itemvalue="comment" />
@@ -67,6 +69,10 @@
             <item index="13" class="java.lang.String" itemvalue="mat-expansion-panel-body" />
             <item index="14" class="java.lang.String" itemvalue="ng-container" />
             <item index="15" class="java.lang.String" itemvalue="mat-paginator" />
+            <item index="16" class="java.lang.String" itemvalue="router-outlet" />
+            <item index="17" class="java.lang.String" itemvalue="mat-date-range-input" />
+            <item index="18" class="java.lang.String" itemvalue="mat-datepicker-toggle" />
+            <item index="19" class="java.lang.String" itemvalue="mat-date-range-picker" />
           </list>
         </value>
       </option>
